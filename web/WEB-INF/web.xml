@@ -19,4 +19,28 @@
         <servlet-name>computer</servlet-name>
         <url-pattern>/getNumber</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>show</servlet-name>
+        <servlet-class>china.gangzhong.ShowLetter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>show</servlet-name>
+        <url-pattern>/helpMeShow</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>computerPI</servlet-name>
+        <servlet-class>china.gangzhong.ComputerPI</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>computerPI</servlet-name>
+        <url-pattern>/computerPI</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ok</servlet-name>
+        <servlet-class>china.gangzhong.Show</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ok</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
 </web-app>
