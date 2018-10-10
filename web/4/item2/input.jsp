@@ -10,7 +10,7 @@
 </head>
 <body>
     <form method="post" action="result.jsp" name="form">
-        <input type="text" name="number">
+        输入数字：<input type="text" name="number">
         <input type="submit" value="提交" name="submit">
     </form>
 </body>
