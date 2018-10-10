@@ -9,7 +9,7 @@ public class Test {
     int score = 0;  //考试者的得分
     boolean boo = false;
     File f = null;
-    FileReader in = null;
+    InputStreamReader in = null;
     BufferedReader buffer = null;
 
     public void setFileName(String fileName) {
@@ -20,7 +20,8 @@ public class Test {
         boo = false;
         try {
             f = new File(fileName);
-            in = new FileReader(f);
+//            in = new FileReader(f);
+            in = new InputStreamReader(new FileInputStream(f),"UTF-8");  //为了防止乱码，统一一下编码
             buffer = new BufferedReader(in);
             correctAnswer = (buffer.readLine()).trim();
         } catch (Exception e) {
