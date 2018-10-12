@@ -15,7 +15,7 @@ String fileDir = request.getParameter("fileDir");
 String fileName = request.getParameter("fileName");
 String fileContent = request.getParameter("fileContent");
 byte c[] = fileContent.getBytes("iso-8859-1");
-fileContent = new String(c);
+fileContent = new String(c,"UTF-8");
 %>
 <file:Write fileContent="<%=fileContent%>" fileDir="<%=fileDir%>" fileName="<%=fileName%>" />
 </body>

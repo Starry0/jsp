@@ -8,10 +8,15 @@
     System.out.println(fileDir+"--"+fileName);
     File f = new File(fileDir,fileName);
     try {
-        FileOutputStream outputStream = new FileOutputStream(f);
-        byte bb[] = fileContent.getBytes();
-        outputStream.write(bb,0,bb.length);
-        outputStream.close();
+        System.out.println(fileContent);
+        OutputStreamWriter outfile = new OutputStreamWriter(new FileOutputStream(f), "UTF-8");
+        BufferedWriter bufferout = new BufferedWriter(outfile);
+        bufferout.write(fileContent);
+        bufferout.close();
+        outfile.close();
+//        byte bb[] = fileContent.getBytes();
+//        outputStream.write(bb,0,bb.length);
+//        outputStream.close();
         out.println("文件写入成功");
         out.println("<br>文件所在目录："+fileDir);
         out.println("<br>文件的名字："+fileName);
