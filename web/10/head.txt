@@ -1,0 +1,33 @@
+<%--
+  User: Starry
+  Date: 2018/10/14
+  Time: 16:25
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<style type="text/css" >
+    body {
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-family: 微软雅黑;
+        background: #f0f0f0;
+        min-width: 1200px;
+    }
+</style>
+<div align="center">
+    <h2>"智多星"智能手机销售网</h2>
+    <table cellspacing="1" cellpadding="1" width="660" align="center" border="0">
+        <tr valign="bottom">
+            <td><a href="/10/inputRegisterMess.jsp"><font size="2">注册</font></a></td>
+            <td><a href="/10/login.jsp"><font size="2">登录</font></a></td>
+            <td><a href="/10/lookMobile.jsp"><font size="2">浏览手机</font></a></td>
+            <td><a href="/10/searchMobile.jsp"><font size="2">查询手机</font></a></td>
+            <td><a href="/10/lookShoppingCar.jsp"><font size="2">查看购物车</font></a></td>
+            <td><a href="/10/lookOrderForm.jsp"><font size="2">查看订单</font></a></td>
+            <td><a href="/exitServlet"><font size="2">退出</font></a></td>
+            <td><a href="/10/index.jsp"><font size="2">主页</font></a></td>
+        </tr>
+    </table>
+</div>
