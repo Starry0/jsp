@@ -99,4 +99,36 @@
         <servlet-name>login</servlet-name>
         <url-pattern>/helpLogin</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>database</servlet-name>
+        <servlet-class>myservlet.control.HandleDatabase</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>database</servlet-name>
+        <url-pattern>/helpReadRecord</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>helpReadFile</servlet-name>
+        <servlet-class>myservlet.control.HandleFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helpReadFile</servlet-name>
+        <url-pattern>/helpReadFile</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>computerSum</servlet-name>
+        <servlet-class>myservlet.control.HandleSum</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>computerSum</servlet-name>
+        <url-pattern>/lookSum</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>auadratic</servlet-name>
+        <servlet-class>myservlet.control.HandleAuadratic</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>auadratic</servlet-name>
+        <url-pattern>/computerAuadratic</url-pattern>
+    </servlet-mapping>
 </web-app>
